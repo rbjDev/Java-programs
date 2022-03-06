@@ -2,10 +2,12 @@ package Backtracking;
 
 public class NQueensProblem {
     public static void main(String[] args){
-        boolean[][] board1 = new boolean[4][4];
-        boolean[][] board2 = new boolean[5][5];
+        boolean[][] board1 = new boolean[1][1];
+        boolean[][] board4 = new boolean[4][4];
+        boolean[][] board5 = new boolean[5][5];
+        boolean[][] board2 = new boolean[2][2];
         //System.out.println("Count:"+nQueens(board, 0));
-        System.out.println("Count:"+nQueensRecursive(board2, 0, 0, 5));
+        System.out.println("Count:"+nQueensRecursive(board1, 0, 0, 1));
     }
 
     public static int nQueensRecursive(boolean[][] board, int row, int col, int target){
@@ -22,8 +24,7 @@ public class NQueensProblem {
         }
 
         if(col==board.length){ 
-            count+=nQueensRecursive(board, row+1,0,target);
-            //return count;
+            count+=nQueensRecursive(board, row+1,0,target);           
         }
 
         if(isSafe(board,row,col)){

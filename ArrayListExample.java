@@ -17,6 +17,7 @@ public class ArrayListExample {
         numbers.add(18);
         numbers.add(25);
         numbers.add(40);
+        
 
         Iterator<Integer> numbersIterator = numbers.iterator();
         while (numbersIterator.hasNext()) {

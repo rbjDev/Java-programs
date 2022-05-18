@@ -54,3 +54,16 @@ class PowerTable{
     }
 
 }
+
+
+// class X{
+//     public synchronized void m1(){
+//         Y y = new Y();
+//         synchronized(y){
+//             Z z = new Z();
+//             synchronized(z){
+//                 //to enter this block a thread needs to acquire locks of x,y, and z
+//             }
+//         }
+//     }
+// }

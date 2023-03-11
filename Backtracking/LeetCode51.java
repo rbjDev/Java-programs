@@ -5,7 +5,10 @@ import java.util.List;
 
 public class LeetCode51 {
     public static void main(String[] args){
-        System.out.println(solveNQueens(2));
+       // System.out.println(solveNQueens(4));
+       int n=5;
+       boolean[][] board = new boolean[n][n];
+       System.out.println(nQueens(board, 0));
     }
 
     public static List<List<String>> solveNQueens(int n) {

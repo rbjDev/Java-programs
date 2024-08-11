@@ -4,7 +4,7 @@
  * An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
  */
 
-package Graph;
+//package Graph;
 
 public class LeetCode200 {
     public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class LeetCode200 {
                 { '1', '1', '1', '1', '0' },
                 { '1', '1', '0', '1', '0' },
                 { '1', '1', '0', '0', '0' },
-                { '0', '0', '0', '0', '0' }
+                { '0', '0', '0', '0', '1' }
         };
         System.out.println(numIslands(grid));
     }
